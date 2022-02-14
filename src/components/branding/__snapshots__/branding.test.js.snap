@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Branding component should render
+      - the wrapper with inline style on background color set via props.backgroundColorHex,
+      - the image element (with src={props.altUrl}, and alt={props.name logo}),
+      - and sub-header 1`] = `
+<div>
+  <div
+    class="branding"
+    data-testid="component-branding"
+    style="background-color: rgb(0, 0, 255);"
+  >
+    <img
+      alt=" logo"
+      src="https://image.host.com"
+    />
+    <h3>
+      Pocket Calculator
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`Branding component should render
+      - the wrapper with inline style on background color set via props.backgroundColorHex,
+      - the main header element set via props.name,
+      - and sub-header 1`] = `
+<div>
+  <div
+    class="branding"
+    data-testid="component-branding"
+    style="background-color: rgb(0, 255, 0);"
+  >
+    <h2>
+      Custom Brand
+    </h2>
+    <h3>
+      Pocket Calculator
+    </h3>
+  </div>
+</div>
+`;

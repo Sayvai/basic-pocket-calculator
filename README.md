@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Basic Pocket Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A very basic pocket calculator implementation, which is implemented against the following libraries / tech stack:
 
-## Available Scripts
+- ReactJS `^17.0.2`
+- TypeScript `^4.5.5`
+- SASS `^1.49.7`
+- React Testing Library `^12.1.2`
 
-In the project directory, you can run:
+The environment with which this project was implemented on:
 
-### `npm start`
+- Node `16.13.2`
+- NPM `8.1.2`
+- and initially scaffolded from create-react-app `5.0.0`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Running the Project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run the project locally, run
 
-### `npm test`
+```bash
+  npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running the Tests
 
-### `npm run build`
+To run unit tests on this project, run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  npm test
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Browsers
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following browsers were successfully tested on:
 
-### `npm run eject`
+- Chrome `98.0.4758.102`
+- Firefox `96.0.2`
+- Safari `15.2`
+## Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Here is a GIF demonstrating of what to expect when you run the project, and a glimpse of the interactions with the web-based pocket calculator.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![GIF: Basic Pocket Calculator](https://user-images.githubusercontent.com/7581546/153953703-643e4513-ea07-4972-bab0-405a05c53cca.gif)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

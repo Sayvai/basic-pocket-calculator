@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen component should render
+      - the wrapper
+      - and the input element with the value set via props.output 1`] = `
+<div>
+  <div
+    class="screen"
+    data-testid="component-screen"
+  >
+    <input
+      class="output"
+      data-testid="component-screen-input"
+      readonly=""
+      value="7*7"
+    />
+  </div>
+</div>
+`;

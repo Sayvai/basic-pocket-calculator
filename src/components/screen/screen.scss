@@ -1,0 +1,19 @@
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ddd;
+  width: 100%;
+  color: #000;
+  border-radius: 5px;
+
+  .output {
+    display: block;
+    padding: 0 0.4em;
+    width: 100%;;
+    min-height: 4ch;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 2em;
+  }
+}
