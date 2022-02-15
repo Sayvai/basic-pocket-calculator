@@ -42,3 +42,7 @@ Here is a GIF demonstrating of what to expect when you run the project, and a gl
 
 ![GIF: Basic Pocket Calculator](https://user-images.githubusercontent.com/7581546/153953703-643e4513-ea07-4972-bab0-405a05c53cca.gif)
 
+## Future Additions For Consideration
+
+- Implement [Redux](https://redux.js.org/) to centrally and globally manage the basic state
+- Implement a functional / E2E testing tool (eg, [Cypress](https://www.cypress.io/) or [Playwright](https://playwright.dev/))
