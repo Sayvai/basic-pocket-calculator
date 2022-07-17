@@ -22,8 +22,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e": "npx cypress open",
-    "e2e:headless": "npx cypress run"
+    "e2e": "npx cypress open --e2e",
+    "e2e:headless": "npx cypress run --e2e",
+    "ct": "npx cypress open --component",
+    "ct:headless": "npx cypress run --component"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +46,12 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^10.3.0"
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "cypress": "^10.3.0",
+    "mocha": "^10.0.0",
+    "rgb-hex": "^4.0.0",
+    "ts-node": "^10.9.1"
   }
 }

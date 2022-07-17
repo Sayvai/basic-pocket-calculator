@@ -6,6 +6,14 @@ export default defineConfig({
       // implement node event listeners here
     },
   },
+
   screenshotOnRunFailure: false,
   video: false,
+
+  component: {
+    devServer: {
+      framework: "create-react-app",
+      bundler: "webpack",
+    },
+  },
 });

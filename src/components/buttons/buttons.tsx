@@ -3,7 +3,7 @@ import './buttons.scss';
 import { decode } from 'html-entities';
 import { ButtonKey } from "../../utilities/types";
 
-interface ButtonsProps {
+export interface ButtonsProps {
   onButtonPress: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
