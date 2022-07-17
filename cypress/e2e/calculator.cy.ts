@@ -26,30 +26,46 @@ describe('Calculator', () => {
     ButtonNine = '[data-testid="Nine"]',
   }
 
-  it(`should render the main default calculator elements:
+  // Demonstrates the testing of rendering against dynamic viewport resolutions without duplicating test code
+  [
+    { w: 800, h: 600 },
+    'iphone-xr'
+  ].forEach((size) => {
+    const isSizeString = typeof size === 'string' ? true : false;
+
+    it(`should render the main default calculator elements:
       - the main calculator UI
       - The (configurable) brand text
       - product name "Pocket Calculator"
       - output screen
-      - calculation buttons`, () => {
-    cy.get(Selector.BrandName).should('be.visible');
-    cy.get(Selector.ProductName).should('be.visible');
-    cy.get(Selector.OutputScreenInput).should('be.visible');
-    cy.get(Selector.ButtonClear).should('be.visible');
-    cy.get(Selector.ButtonMultiply).should('be.visible');
-    cy.get(Selector.ButtonDivide).should('be.visible');
-    cy.get(Selector.ButtonSubtract).should('be.visible');
-    cy.get(Selector.ButtonAdd).should('be.visible');
-    cy.get(Selector.ButtonEqual).should('be.visible');
-    cy.get(Selector.ButtonOne).should('be.visible');
-    cy.get(Selector.ButtonTwo).should('be.visible');
-    cy.get(Selector.ButtonThree).should('be.visible');
-    cy.get(Selector.ButtonFour).should('be.visible');
-    cy.get(Selector.ButtonFive).should('be.visible');
-    cy.get(Selector.ButtonSix).should('be.visible');
-    cy.get(Selector.ButtonSeven).should('be.visible');
-    cy.get(Selector.ButtonEight).should('be.visible');
-    cy.get(Selector.ButtonNine).should('be.visible');
+      - calculation buttons
+      - for viewport resolution ${isSizeString ? size : `width: ${size.w} | height: ${size.h}`}`, () => {
+
+      if (isSizeString) {
+        cy.viewport(size as any);
+      } else {
+        cy.viewport(size.w, size.h)
+      }
+
+      cy.get(Selector.BrandName).should('be.visible');
+      cy.get(Selector.ProductName).should('be.visible');
+      cy.get(Selector.OutputScreenInput).should('be.visible');
+      cy.get(Selector.ButtonClear).should('be.visible');
+      cy.get(Selector.ButtonMultiply).should('be.visible');
+      cy.get(Selector.ButtonDivide).should('be.visible');
+      cy.get(Selector.ButtonSubtract).should('be.visible');
+      cy.get(Selector.ButtonAdd).should('be.visible');
+      cy.get(Selector.ButtonEqual).should('be.visible');
+      cy.get(Selector.ButtonOne).should('be.visible');
+      cy.get(Selector.ButtonTwo).should('be.visible');
+      cy.get(Selector.ButtonThree).should('be.visible');
+      cy.get(Selector.ButtonFour).should('be.visible');
+      cy.get(Selector.ButtonFive).should('be.visible');
+      cy.get(Selector.ButtonSix).should('be.visible');
+      cy.get(Selector.ButtonSeven).should('be.visible');
+      cy.get(Selector.ButtonEight).should('be.visible');
+      cy.get(Selector.ButtonNine).should('be.visible');
+    })
   })
 
   it(`should be able to perform a correct calculation: 1+1=2`, () => {
